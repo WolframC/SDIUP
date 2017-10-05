@@ -1,0 +1,12 @@
+*
+!.gitignore
+!main.tex
+!preamble.tex
+!abstract.tex
+!introduction.tex
+!experiment.tex
+!result.tex
+!conclusion.tex
+!acknowledgement.tex
+!reference.bib
+!main.pdf
