@@ -146,24 +146,36 @@ To some extent, the correlation coefficient reflects the superiority of the mola
 
 \subsubsection{By Job method}
 
-We use $T_L$ to represent $\frac{V_{phen}}{V_{Fe}+V_{phen}}$. When $T_L<0.75$, the fitting line is $y=0.733x-0.030(R=0.998)$, and when $T_L\geq0.75$, the fitting line is $y=-1.908x+1.904(R=0.994)$ which are shown below in Figure~\ref{iron}.
+We use $T_L$ to represent $\frac{V_{phen}}{V_{Fe}+V_{phen}}$. When $T_L<0.75$, the fitting line is$$y=0.733x-0.030(R=0.998)$$, and when $T_L\geq0.75$, the fitting line is$$y=-1.908x+1.904(R=0.994)$$They are shown below in Figure~\ref{iron}.
 
 \begin{table}[H]
 	\caption{Job method of iron}
 	\label{Tab.Jbm}
-	\begin{tabular}{lcccccccccccccccccc}
+	\begin{tabular}{lccccccccc}
 	\toprule
 	Index
-	& 1 	& 2	 	&3		& 4 	& 5 	& 6 	& 7 	& 8 	& 9 	& 10	& 11	& 12	&13		&14		&15		&16		&17		&18\\
+	& 1 	& 2	 	&3		& 4 	& 5 	& 6 	& 7 	& 8		& 9\\
 	\midrule
 	$V_{phen}$/mL
-	&0.0	&1.8	&2.4	&3.0	&3.5	&4.0	&4.4	&4.8	&5.3	&5.7	&6.0	&6.2	&6.4	&6.6	&6.9	&7.2	&7.5	&8.0\\
+	&0.0	&1.8	&2.4	&3.0	&3.5	&4.0	&4.4	&4.8	&5.3\\
 	$V_{\ce{Fe}}$/mL
-	&8.0	&6.2	&5.6	&5.0	&4.5	&4.0	&3.6	&3.2	&2.7	&2.3	&2.0	&1.8	&1.6	&1.4	&1.1	&0.8	&0.5	&0.0\\
+	&8.0	&6.2	&5.6	&5.0	&4.5	&4.0	&3.6	&3.2	&2.7\\
 	$T_L$
-	& 0.00 	&0.23	&0.30	&0.38	&0.44	&0.50	&0.55	&0.60	&0.67	&0.71	&0.75	&0.78	&0.80	&0.83	&0.86	&0.90	&0.94	&1.00\\
+	& 0.00 	&0.23	&0.30	&0.38	&0.44	&0.50	&0.55	&0.60	&0.67\\
 	$Absorbance$
-	&   	&0.141	&0.185	&0.252	&0.292	&0.330	&0.377	&0.410	&0.451	&0.490	&0.490	&0.405	&0.368	&0.320	&0.258	&0.186	&0.117	&\\
+	&   	&0.141	&0.185	&0.252	&0.292	&0.330	&0.377	&0.410	&0.451\\
+	\toprule
+	Index
+	& 10	& 11	& 12	&13		&14		&15		&16		&17		&18\\
+	\midrule
+	$V_{phen}$/mL
+	&5.7	&6.0	&6.2	&6.4	&6.6	&6.9	&7.2	&7.5	&8.0\\
+	$V_{\ce{Fe}}$/mL
+	&2.3	&2.0	&1.8	&1.6	&1.4	&1.1	&0.8	&0.5	&0.0\\
+	$T_L$
+	&0.71	&0.75	&0.78	&0.80	&0.83	&0.86	&0.90	&0.94	&1.00\\
+	$Absorbance$
+	&0.490	&0.490	&0.405	&0.368	&0.320	&0.258	&0.186	&0.117	&\\
 	\bottomrule
 	\end{tabular}
 \end{table}
@@ -176,19 +188,26 @@ We use $T_L$ to represent $\frac{V_{phen}}{V_{Fe}+V_{phen}}$. When $T_L<0.75$, t
 
 So the measured ratio of phen and \ce{Fe} $n_{Fe}$ is calculated by$$n_{Fe}=\frac{T_L}{1-T_L}=2.70$$The reason why the measured ratio is smaller than theoretical number is when $T_L\geq0.75$, the data points we used to fit the line is compressed in the X scale, which means great loss of accuracy. And this is unavoidable when the ratio of anion and cation isn't $1$. Besides, the slope of the theoretical line on the right is so great, which indicates a large relative deviation. Specifically, let's see the results of determining composition of copper(\uppercase\expandafter{\romannumeral2}) and sulfosalicyclic acid complex whose ratio of anion and cation is $1$ using Job method.
 
-We use $T_L$ to represent $\frac{V_{\ce{H3SSR}}}{V_{\ce{Cu(NO3)2}}+V_{\ce{H3SSR}}}$. When $T_L<0.5$, the fitting line is$$y=0.748x+0.026(R=0.987)$$and when $T_L\geq0.5$, the fitting line is$$y=-0.818x+0.850(R=0.998)$$ which are shown below in Figure~\ref{copper}.
+We use $T_L$ to represent $\frac{V_{\ce{H3SSR}}}{V_{\ce{Cu(NO3)2}}+V_{\ce{H3SSR}}}$. When $T_L<0.5$, the fitting line is$$y=0.748x+0.026(R=0.987)$$and when $T_L\geq0.5$, the fitting line is$$y=-0.818x+0.850(R=0.998)$$They are shown below in Figure~\ref{copper}.
 
 \begin{table}[H]
 	\caption{Job method of copper}
 	\label{Tab.Jbm2}
-	\begin{tabular}{lccccccccccccc}
+	\begin{tabular}{lccccccc}
 	\toprule
-	Index					&1		&2		&3		&4		&5		&6		&7		&8		&9		&10		&11		&12		&13\\
+	Index					&1		&2		&3		&4		&5		&6		&7		\\
 	\midrule
-	$V_{\ce{H3SSR}}$/mL 	&0		&2		&4		&6		&8		&10		&12		&14		&16		&18		&20		&22		&24\\
-	$V_{\ce{Cu(NO3)2}}$/mL  &24		&22		&20		&18		&16		&14		&12		&10		&8		&6		&4		&2		&0	\\
-	$T_L$					&0		&0.083	&0.167	&0.250	&0.333	&0.417	&0.500	&0.583	&0.667	&0.750	&0.833	&0.917	&1.000\\
-	$Absorbance$ 			&0.037	&0.076	&0.140	&0.225	&0.274	&0.296	&0.312	&0.310	&0.298	&0.244	&0.171	&0.097	&0.031\\
+	$V_{\ce{H3SSR}}$/mL 	&0		&2		&4		&6		&8		&10		&12		\\
+	$V_{\ce{Cu(NO3)2}}$/mL  &24		&22		&20		&18		&16		&14		&12		\\
+	$T_L$					&0		&0.083	&0.167	&0.250	&0.333	&0.417	&0.500	\\
+	$Absorbance$ 			&0.037	&0.076	&0.140	&0.225	&0.274	&0.296	&0.312	\\
+	\toprule
+	Index					&8		&9		&10		&11		&12		&13		&\\
+	\midrule
+	$V_{\ce{H3SSR}}$/mL 	&14		&16		&18		&20		&22		&24		&\\
+	$V_{\ce{Cu(NO3)2}}$/mL  &10		&8		&6		&4		&2		&0		&\\
+	$T_L$					&0.583	&0.667	&0.750	&0.833	&0.917	&1.000	&\\
+	$Absorbance$ 			&0.310	&0.298	&0.244	&0.171	&0.097	&0.031	&\\
 	\bottomrule
 	\end{tabular}
 \end{table}
