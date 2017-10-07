@@ -146,7 +146,7 @@ To some extent, the correlation coefficient reflects the superiority of the mola
 
 \subsubsection{By Job method}
 
-We use $T_L$ to represent $\frac{V_{phen}}{V_{Fe}+V_{phen}}$. When $T_L<0.75$, the fitting line is $y=N/Ax-N/A(R=N/A)$, and when $T_L\geq0.75$, the fitting line is $y=-N/Ax+N/A(R=N/A)$ which are shown below in Figure~\ref{fig3}.
+We use $T_L$ to represent $\frac{V_{phen}}{V_{Fe}+V_{phen}}$. When $T_L<0.75$, the fitting line is $y=0.733x-0.030(R=0.998)$, and when $T_L\geq0.75$, the fitting line is $y=-1.908x+1.904(R=0.994)$ which are shown below in Figure~\ref{iron}.
 
 \begin{table}[H]
 	\caption{Job method of iron}
@@ -163,20 +163,20 @@ We use $T_L$ to represent $\frac{V_{phen}}{V_{Fe}+V_{phen}}$. When $T_L<0.75$, t
 	$T_L$
 	& 0.00 	&0.23	&0.30	&0.38	&0.44	&0.50	&0.55	&0.60	&0.67	&0.71	&0.75	&0.78	&0.80	&0.83	&0.86	&0.90	&0.94	&1.00\\
 	$Absorbance$
-	&   	&0.141	&0.185	&0.252	&0.252	&0.330	&0.377	&0.410	&0.441	&0.490	&0.490	&0.405	&0.368	&0.340	&0.258	&0.186	&0.117	&\\
+	&   	&0.141	&0.185	&0.252	&0.292	&0.330	&0.377	&0.410	&0.451	&0.490	&0.490	&0.405	&0.368	&0.320	&0.258	&0.186	&0.117	&\\
 	\bottomrule
 	\end{tabular}
 \end{table}
 
 \begin{figure}[H]
-	\includegraphics[width=\linewidth]{Fig3.pdf}
+	\includegraphics[width=\linewidth]{iron.pdf}
 	\caption{Job method of iron}
-	\label{fig3}
+	\label{iron}
 \end{figure}
 
-The reason why the measured coordination number is smaller than theoretical number is when $T_L\geq3.0$, we only use four points to fit the line, and less points means less accuracy, which is unavoidable when the coordination number isn't $1$. Besides, the slope of the theoretical line on the right is so great, which indicates a large relative deviation. Specifically, let's see the results of determining composition of copper(\uppercase\expandafter{\romannumeral2}) and sulfosalicyclic acid complex using Job method.
+So the measured ratio of phen and \ce{Fe} $n_{Fe}$ is calculated by$$n_{Fe}=\frac{T_L}{1-T_L}=2.70$$The reason why the measured ratio is smaller than theoretical number is when $T_L\geq0.75$, the data points we used to fit the line is compressed in the X scale, which means great loss of accuracy. And this is unavoidable when the ratio of anion and cation isn't $1$. Besides, the slope of the theoretical line on the right is so great, which indicates a large relative deviation. Specifically, let's see the results of determining composition of copper(\uppercase\expandafter{\romannumeral2}) and sulfosalicyclic acid complex whose ratio of anion and cation is $1$ using Job method.
 
-We use $T_L$ to represent $\frac{V_{\ce{H3SSR}}}{V_{\ce{Cu(NO3)2}}+V_{\ce{H3SSR}}}$. When $T_L<0.5$, the fitting line is $y=N/Ax-N/A(R=N/A)$, and when $T_L\geq0.5$, the fitting line is $y=N/Ax+N/A(R=N/A)$ which are shown below in Figure~\ref{fig4}.
+We use $T_L$ to represent $\frac{V_{\ce{H3SSR}}}{V_{\ce{Cu(NO3)2}}+V_{\ce{H3SSR}}}$. When $T_L<0.5$, the fitting line is$$y=0.748x+0.026(R=0.987)$$and when $T_L\geq0.5$, the fitting line is$$y=-0.818x+0.850(R=0.998)$$ which are shown below in Figure~\ref{copper}.
 
 \begin{table}[H]
 	\caption{Job method of copper}
@@ -188,18 +188,20 @@ We use $T_L$ to represent $\frac{V_{\ce{H3SSR}}}{V_{\ce{Cu(NO3)2}}+V_{\ce{H3SSR}
 	$V_{\ce{H3SSR}}$/mL 	&0		&2		&4		&6		&8		&10		&12		&14		&16		&18		&20		&22		&24\\
 	$V_{\ce{Cu(NO3)2}}$/mL  &24		&22		&20		&18		&16		&14		&12		&10		&8		&6		&4		&2		&0	\\
 	$T_L$					&0		&0.083	&0.167	&0.250	&0.333	&0.417	&0.500	&0.583	&0.667	&0.750	&0.833	&0.917	&1.000\\
-	$Absorbance$ 			&0.037	&0.076	&0.140	&0.245	&0.274	&0.296	&0.312	&0.310	&0.298	&0.244	&0.171	&0.097	&0.031\\
+	$Absorbance$ 			&0.037	&0.076	&0.140	&0.225	&0.274	&0.296	&0.312	&0.310	&0.298	&0.244	&0.171	&0.097	&0.031\\
 	\bottomrule
 	\end{tabular}
 \end{table}
 
 \begin{figure}[H]
-	\includegraphics[width=\linewidth]{Fig4.pdf}
+	\includegraphics[width=\linewidth]{copper.pdf}
 	\caption{Job method of copper}
-	\label{fig4}
+	\label{copper}
 \end{figure}
 
-It's very clear that if the coordination number is $1$, the position of absorbance peak is easy to tell and the line on the two sides are fitted more accurately with less point. So molar ratio method is always available in principle, while as for complexes with large coordination number, such as \ce{[Fe(CN)6]}$^{3-}$, it's reasonable to predict that the absorbance peak will be pushed aside along with the axis, which is really difficult for us to tell it's accurate composition.
+So the measured ratio of \ce{H3SSR} and \ce{Cu} $n_{Ce}$ is calculated by$$n_{Cu}=\frac{T_L}{1-T_L}=1.11$$Notice that in this condition, we use much less data points to fit and get a better result.
+
+So it's very clear that if the ratio of anion and cation or vice versa is $1$ or close to $1$, the position of absorbance peak is easy to tell and the line on the two sides are fitted more accurately with less point. So molar ratio method is always available in principle, while as for complexes with large ratio, such as \ce{[Fe(CN)6]}$^{3-}$, it's reasonable to predict that the absorbance peak will be pushed aside along with the axis, which is really difficult for us to tell it's accurate composition both technically and mathematically.
 
 
 \subsection{Purity measurement of \ce{FeC2O4}$\cdot$2\ce{H2O}}
