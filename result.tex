@@ -10,22 +10,17 @@
 \begin{table}[H]
 	\caption{Unifactor $\lambda$}
 	\label{Tab.Uni}
-	\begin{tabular}{ccc}
+	\begin{tabular}{lcccccc}
 	\toprule
-	Index	& $\lambda$/nm 	& \emph{Absorbance}\\
+	Index			&1		&2		&3		&4		&5		&6		\\
 	\midrule
-	01		& 450			& 0.305\\
-	02		& 460			& 0.333\\
-	03		& 470			& 0.362\\
-	04		& 480			& 0.378\\
-	05		& 490			& 0.385\\
-	06		& 500			& 0.399\\
-	07		& 510			& 0.409\\
-	08		& 520			& 0.374\\
-	09		& 530			& 0.292\\
-	10		& 540			& 0.196\\
-	11		& 550			& 0.112\\
-	12		& 560			& 0.062\\
+	$\lambda$/nm	&450	&460	&470	&480	&490	&500	\\
+	$Absorbance$	&0.305	&0.333	&0.362	&0.378	&0.385	&0.399	\\
+	\midrule
+	Index			&7		&8		&9		&10		&11		&12		\\
+	\midrule
+	$\lambda$/nm	&510	&520	&530	&540	&550	&560	\\
+	$Absorbance$	&0.409	&0.374	&0.292	&0.196	&0.112	&0.062	\\
 	\bottomrule
 	\end{tabular}
 \end{table}
@@ -118,20 +113,28 @@ We compare the range of each factor and draw the conclusion that wavelength and 
 
 \subsubsection{Molar ratio method}
 
-The function of fitting line on the left is $y=0.742x+0.0264(R=0.9979)$, and the function of fitting line on the right line is $y=0.254(R=1)$ which are shown below in Figure~\ref{fig2}. According to the figure, we know coordination number measured by molar ratio method is 3.07.
+The function of fitting line on the left is $y=0.076x+0.023(R=0.998)$, and $Absorbance$ is obviously unvariable when $\frac{V_{phen}}{V_{Fe}}\geq 3.0$, which are shown below in Figure~\ref{fig2}. According to the figure, we know the ratio measured by molar ratio method is $3.0$.
 
 \begin{table}[H]
 	\caption{Molar ratio method}
 	\label{Tab.Mrm}
-	\begin{tabular}{lcccccccc}
+	\begin{tabular}{lccccccc}
 	\toprule
-	Index         &  1  &  2  &  3  &  4  &  5  &  6  &  7  &  8  \\
+	Index			&1		&2		&3		&4		&5		&6		&7		\\
 	\midrule
-	$V_{phen}/mL$ &1.00 &1.50 &2.00 &2.50 &3.00 &3.50 &4.00 &4.50 \\
-	$V_{Fe}/mL$   &1.00 &1.00 &1.00 &1.00 &1.00 &1.00 &1.00 &1.00 \\
+	$V_{phen}$/mL	&1.00	&1.50	&1.75	&2.00	&2.25	&2.50	&2.75	\\
+	$V_{Fe}$/mL		&1.00	&1.00	&1.00	&1.00	&1.00	&1.00	&1.00	\\
 	$\frac{V_{phen}}{V_{Fe}}$
-				  &1.00 &1.50 &2.00 &2.50 &3.00 &3.50 &4.00 &4.50 \\
-	Absorbance    &0.100&0.140&0.172&0.213&0.252&0.254&0.254&0.254\\
+					&1.00	&1.50	&1.75	&2.00	&2.25	&2.50	&2.75	\\
+	$Absorbance$	&0.100	&0.140	&0.153	&0.172	&0.190	&0.213	&0.233	\\
+	\midrule
+	Index			&8		&9		&10		&11		&12		&13		&14\\
+	\midrule
+	$V_{phen}$/mL	&3.00	&3.25	&3.50	&3.75	&4.00	&4.25	&4.50\\
+	$V_{Fe}$/mL		&1.00	&1.00	&1.00	&1.00	&1.00	&1.00	&1.00\\
+	$\frac{V_{phen}}{V_{Fe}}$
+					&3.00	&3.25	&3.50	&3.75	&4.00	&4.25	&4.50\\
+	$Absorbance$	&0.252	&0.255	&0.254	&0.254	&0.254	&0.254	&0.254\\
 	\bottomrule
 	\end{tabular}
 \end{table}
@@ -164,7 +167,7 @@ We use $T_L$ to represent $\frac{V_{phen}}{V_{Fe}+V_{phen}}$. When $T_L<0.75$, t
 	& 0.00 	&0.23	&0.30	&0.38	&0.44	&0.50	&0.55	&0.60	&0.67\\
 	$Absorbance$
 	&   	&0.141	&0.185	&0.252	&0.292	&0.330	&0.377	&0.410	&0.451\\
-	\toprule
+	\midrule
 	Index
 	& 10	& 11	& 12	&13		&14		&15		&16		&17		&18\\
 	\midrule
@@ -201,7 +204,7 @@ We use $T_L$ to represent $\frac{V_{\ce{H3SSR}}}{V_{\ce{Cu(NO3)2}}+V_{\ce{H3SSR}
 	$V_{\ce{Cu(NO3)2}}$/mL  &24		&22		&20		&18		&16		&14		&12		\\
 	$T_L$					&0		&0.083	&0.167	&0.250	&0.333	&0.417	&0.500	\\
 	$Absorbance$ 			&0.037	&0.076	&0.140	&0.225	&0.274	&0.296	&0.312	\\
-	\toprule
+	\midrule
 	Index					&8		&9		&10		&11		&12		&13		&\\
 	\midrule
 	$V_{\ce{H3SSR}}$/mL 	&14		&16		&18		&20		&22		&24		&\\
@@ -228,14 +231,14 @@ So it's very clear that if the ratio of anion and cation or vice versa is $1$ or
 \subsubsection{Spectrophotometric method}
 
 \paragraph{Plot standard curve}
-Using data from Table~\ref{tab.Cal}, we plot the standard curve which is shown in Figure~\ref{fig1}, the function of fittineline is $y=0.2026x+0.00076(R=0.9995)$, so it is reasonable to think it pass the origin accurately. Then we can use this curve to determine the concentration of iron in unknown sample as long as we dissolve it and measure its absorbance.
+Using data from Table~\ref{tab.Cal}, we plot the standard curve which is shown in Figure~\ref{fig1}, the function of fittineline is $y=0.203x+7.62\times 10^{-4}(R=0.999)$, so it is reasonable to think it pass the origin accurately. Then we can use this curve to determine the concentration of iron in unknown sample as long as we dissolve it and measure its absorbance.
 \begin{table}[H]
 	\caption{standard curve data}
 	\label{tab.Cal}
 	\begin{tabular}{lllllll}
 	\toprule
 	$V_{Fe}$/mL    & 0.0 & 1.0 & 2.0 & 3.0 & 4.0 & 5.0 \\
-	$c_{Fe}/\mu$g$\cdot$mL$^{-1}$
+	$c_{Fe}/\mu$g/mL
 				   & 0.0 & 0.4 & 0.8 & 1.2 & 1.6 & 2.0 \\
 	\midrule
 	$Absorbance$     &0.000&0.081&0.166&0.247&0.316&0.410\\
